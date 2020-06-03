@@ -1,3 +1,14 @@
+/*
+Copyright 2020 Trent Willis
+Adaptation to cover Brazil cases by Thiago J. Xavier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+
 const content = `
   <style>
     :host {
@@ -41,62 +52,28 @@ const content = `
   </style>
 
   <p class="names">
-    <strong>I stand in solidarity</strong> with
-    <a href="https://en.wikipedia.org/wiki/Killing_of_George_Floyd" target="_blank" rel="noreferrer">George Floyd</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Breonna_Taylor" target="_blank" rel="noreferrer">Breonna Taylor</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Ahmaud_Arbery" target="_blank" rel="noreferrer">Ahmaud Arbery</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Tony_McDade" target="_blank" rel="noreferrer">Tony McDade</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Anthony_Hill" target="_blank" rel="noreferrer">Anthony Hill</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Jamarion_Robinson" target="_blank" rel="noreferrer">Jamarion Robinson</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Willie_McCoy" target="_blank" rel="noreferrer">Willie McCoy</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Emantic_Fitzgerald_Bradford_Jr." target="_blank" rel="noreferrer">Emantic Fitzgerald Bradford J</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Jemel_Roberson" target="_blank" rel="noreferrer">Jemel Roberson</a>,
-    <a href="https://en.wikipedia.org/wiki/Murder_of_Botham_Jean" target="_blank" rel="noreferrer">Botham Shem Jean</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Anthony_Lamar_Smith" target="_blank" rel="noreferrer">Anthony Lamar Smith</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Ramarley_Graham" target="_blank" rel="noreferrer">Ramarley Graham</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Trayvon_Martin" target="_blank" rel="noreferrer">Trayvon Martin</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Larry_Jackson_Jr." target="_blank" rel="noreferrer">Larry Jackson Jr</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Jonathan_Ferrell" target="_blank" rel="noreferrer">Jonathan Ferrell</a>,
-    <a href="https://en.wikipedia.org/wiki/Death_of_Chavis_Carter" target="_blank" rel="noreferrer">Chavis Carter</a>,
-    <a href="https://en.wikipedia.org/wiki/Death_of_Chavis_Carter#Similar_deaths" target="_blank" rel="noreferrer">Victor White III</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Dontre_Hamilton" target="_blank" rel="noreferrer">Dontre Hamilton</a>,
-    <a href="https://en.wikipedia.org/wiki/Death_of_Eric_Garner" target="_blank" rel="noreferrer">Eric Garner</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_John_Crawford_III" target="_blank" rel="noreferrer">John Crawford III</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Michael_Brown" target="_blank" rel="noreferrer">Michael Brown</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Ezell_Ford" target="_blank" rel="noreferrer">Ezell Ford</a>,
-    <a href="https://en.wikipedia.org/wiki/Ferguson_unrest#Kajieme_Powell" target="_blank" rel="noreferrer">Kajieme Powell</a>,
-    <a href="https://en.wikipedia.org/wiki/Murder_of_Laquan_McDonald" target="_blank" rel="noreferrer">Laquan McDonald</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Akai_Gurley" target="_blank" rel="noreferrer">Akai Gurley</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Tamir_Rice" target="_blank" rel="noreferrer">Tamir Rice</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Jerame_Reid" target="_blank" rel="noreferrer">Jerame Reid</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Charley_Leundeu_Keunang" target="_blank" rel="noreferrer">Charly Keunang</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Tony_Robinson" target="_blank" rel="noreferrer">Tony Robinson</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Walter_Scott" target="_blank" rel="noreferrer">Walter Scott</a>,
-    <a href="https://en.wikipedia.org/wiki/Death_of_Freddie_Gray" target="_blank" rel="noreferrer">Freddie Gray</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Samuel_DuBose" target="_blank" rel="noreferrer">Samuel DuBose</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Jamar_Clark" target="_blank" rel="noreferrer">Jamar Clark</a>,
-    <a href="https://en.wikipedia.org/wiki/Dismissal_of_Robert_Rialmo#Quintonio_LeGrier" target="_blank" rel="noreferrer">Quintonio LeGrier</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Greg_Gunn" target="_blank" rel="noreferrer">Gregory Gunn</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Alton_Sterling" target="_blank" rel="noreferrer">Alton Sterling</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Philando_Castile" target="_blank" rel="noreferrer">Philando Castile</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Terence_Crutcher" target="_blank" rel="noreferrer">Terence Crutcher</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Keith_Lamont_Scott" target="_blank" rel="noreferrer">Keith Lamont Scott</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Alfred_Olango" target="_blank" rel="noreferrer">Alfred Olango</a>,
-    <a href="https://en.wikipedia.org/wiki/Murder_of_Jordan_Edwards" target="_blank" rel="noreferrer">Jordan Edwards</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Stephon_Clark" target="_blank" rel="noreferrer">Stephon Clark</a>,
-    <a href="https://en.wikipedia.org/wiki/Shooting_of_Patrick_Harmon" target="_blank" rel="noreferrer">Patrick Harmon</a>,
-    and countless others who have been victims of <span class="red">racism</span> and <span class="red">police brutality</span>.
+    <strong>Eu estou em solidariedade</strong> com
+    <a href="https://pt.wikipedia.org/wiki/Morte_de_Jo%C3%A3o_Pedro" target="_blank" rel="noreferrer">João Pedro</a>,
+    <a href="https://brasil.elpais.com/brasil/2019/11/19/politica/1574171033_166751.html" target="_blank" rel="noreferrer">Ágatha Vitória Sales Félix</a>,
+    <a href="https://oglobo.globo.com/rio/familia-acusa-policiais-paisana-por-morte-de-menina-de-11-anos-em-triagem-23454570" target="_blank" rel="noreferrer">Jenifer Cilene Gomes</a>,
+    <a href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2019/03/20/pms-acusados-por-familia-de-matar-menino-continuam-patrulhando-ruas-no-rio.htm" target="_blank" rel="noreferrer">Kauan Peixoto</a>,
+    <a href="https://odia.ig.com.br/rio-de-janeiro/2019/05/5643146--meu-filho-morreu---diz-pai-de-menino-vitima-de-bala-perdida-na-vila-alianca.html" target="_blank" rel="noreferrer">Kauã Rozário</a>,
+    <a href="https://brasil.elpais.com/brasil/2019/11/13/politica/1573659983_196213.html" target="_blank" rel="noreferrer">Kethellen Umbelino de Oliveira Gomes</a>,
+    <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2019/09/09/menino-de-12-anos-morto-durante-operacao-da-pm-no-chapadao-e-enterrado.ghtml" target="_blank" rel="noreferrer">Kauê Ribeiro dos Santos</a>,
+    <a href="https://noticias.uol.com.br/cotidiano/ultimas-noticias/2020/01/10/menina-de-8-anos-morre-no-rj-apos-ser-atingida-em-casa-por-bala-perdida.htm" target="_blank" rel="noreferrer">Anna Carolina de Souza Neves</a>
+    e inúmeras outras que foram vítimas do <span class="red">racismo</span> e <span class="red">brutalidade policial</span>.
   </p>
 
-  <p><strong><a href="https://blacklivesmatters.carrd.co/" target="_blank" rel="noreferrer">Go here to find out how <em>you</em> can help.</a></strong></p>
+  <p><strong><a href="https://vidasnegrasimportam.carrd.co/" target="_blank" rel="noreferrer">Saiba como <em>você</em> pode ajudar.</a></strong></p>
 
-  <p><small><a href="https://github.com/trentmwillis/i-stand" target="_blank" rel="noreferrer">Embed this on your site.</a></small></p>
+  <p><small><a href="https://github.com/xavierthiago/i-stand" target="_blank" rel="noreferrer">Adicione em seu <i>website</i>.</a></small></p>
 `;
 
 class BlackLives extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
+
     this.shadowRoot.innerHTML = content;
   }
 }
